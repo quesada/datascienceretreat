@@ -1,0 +1,26 @@
+.hc_template_frontend_wrapper, .hc_template_frontend_wrapper div, .hc_template_frontend_wrapper span,
+.hc_template_frontend_wrapper h1, .hc_template_frontend_wrapper h2, .hc_template_frontend_wrapper h3, .hc_template_frontend_wrapper h4,
+.hc_template_frontend_wrapper h5, .hc_template_frontend_wrapper h6, .hc_template_frontend_wrapper p,
+.hc_template_frontend_wrapper a, .hc_template_frontend_wrapper img,
+.hc_template_frontend_wrapper b, .hc_template_frontend_wrapper u, .hc_template_frontend_wrapper i, .hc_template_frontend_wrapper center,
+.hc_template_frontend_wrapper form, .hc_template_frontend_wrapper label,
+.hc_template_frontend_wrapper table, .hc_template_frontend_wrapper tbody, .hc_template_frontend_wrapper tfoot, .hc_template_frontend_wrapper thead,
+.hc_template_frontend_wrapper tr, .hc_template_frontend_wrapper th, .hc_template_frontend_wrapper td
+ {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+.hc_template_frontend_wrapper ol, .hc_template_frontend_wrapper ul {
+	list-style: none;
+}
+.hc_template_frontend_wrapper blockquote, .hc_template_frontend_wrapper q {
+	quotes: none;
+}
+.hc_template_frontend_wrapper table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}

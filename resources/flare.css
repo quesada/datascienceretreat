@@ -1,0 +1,811 @@
+.flare-button {
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 40px;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    -webkit-transition: border-radius 0.25s;
+    -moz-transition: border-radius 0.25s;
+    transition: border-radius 0.25s;
+}
+.flare-button .flare-button-wrap {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    -webkit-transition: border-radius 0.25s;
+    -moz-transition: border-radius 0.25s;
+    transition: border-radius 0.25s;
+}
+.flare-horizontal .flare-button .flare-button-wrap {
+    -webkit-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+}
+.flare-button.flare-iconstyle-round-flat-nostroke .flare-button-wrap,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke .flare-button-wrap,
+.flare-button.flare-iconstyle-square-flat-nostroke .flare-button-wrap {
+    border: none;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.flare-button .flare-button-icon {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-indent: -999em;
+    text-align: left;
+    background: url('../images/sprite-social-icons-1.2.3.png');
+}
+
+/** Twitter **/
+.flare-button.button-type-twitter .flare-button-icon { background-position: 0 0; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-twitter .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-twitter .flare-button-icon { background-position: 0 0; }
+.flare-button.flare-iconstyle-round-flat.button-type-twitter .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-twitter .flare-button-icon { background-position: -42px 0; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-twitter .flare-button-icon { background-position: -42px 0; }
+
+/** Facebook **/
+.flare-button.button-type-facebook .flare-button-icon { background-position: 0 -40px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-facebook .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-facebook .flare-button-icon { background-position: 0 -40px; }
+.flare-button.flare-iconstyle-round-flat.button-type-facebook .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-facebook .flare-button-icon { background-position: -42px -40px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-facebook .flare-button-icon { background-position: -42px -40px; }
+
+/** Pinterest **/
+.flare-button.button-type-pinterest .flare-button-icon { background-position: 0 -80px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-pinterest .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-pinterest .flare-button-icon { background-position: 0 -80px; }
+.flare-button.flare-iconstyle-round-flat.button-type-pinterest .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-pinterest .flare-button-icon { background-position: -42px -80px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-pinterest .flare-button-icon { background-position: -42px -80px; }
+
+/** Reddit **/
+.flare-button.button-type-reddit .flare-button-icon { background-position: 0 -120px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-reddit .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-reddit .flare-button-icon { background-position: 0 -120px; }
+.flare-button.flare-iconstyle-round-flat.button-type-reddit .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-reddit .flare-button-icon { background-position: -42px -120px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-reddit .flare-button-icon { background-position: -42px -120px; }
+
+/** Email **/
+.flare-button.button-type-email .flare-button-icon { background-position: 0 -160px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-email .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-email .flare-button-icon { background-position: 1px -159px }
+.flare-button.flare-iconstyle-round-flat.button-type-email .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-email .flare-button-icon { background-position: -42px -160px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-email .flare-button-icon { background-position: -41px -159px; }
+
+/** Stumble Upon **/
+.flare-button.button-type-stumbleupon .flare-button-icon { background-position: -1px -200px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-stumbleupon .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-stumbleupon .flare-button-icon { background-position: 0 -200px; }
+.flare-button.flare-iconstyle-round-flat.button-type-stumbleupon .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-stumbleupon .flare-button-icon { background-position: -42px -200px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-stumbleupon .flare-button-icon { background-position: -42px -200px; }
+
+/** Google Plus **/
+.flare-button.button-type-googleplus .flare-button-icon { background-position: -1px -240px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-googleplus .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-googleplus .flare-button-icon { background-position: 0 -240px; }
+.flare-button.flare-iconstyle-round-flat.button-type-googleplus .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-googleplus .flare-button-icon { background-position: -43px -240px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-googleplus .flare-button-icon { background-position: -42px -240px; }
+
+/** RSS **/
+.flare-button.button-type-rss .flare-button-icon { background-position: -1px -289px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-rss .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-rss .flare-button-icon { background-position: 0 -288px; }
+.flare-button.flare-iconstyle-round-flat.button-type-rss .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-rss .flare-button-icon { background-position: -39px -289px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-rss .flare-button-icon { background-position: -39px -289px; }
+
+/** LinkedIn **/
+.flare-button.button-type-linkedin .flare-button-icon { background-position: 0 -331px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-linkedin .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-linkedin .flare-button-icon { background-position: 0 -330px; }
+.flare-button.flare-iconstyle-round-flat.button-type-linkedin .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-linkedin .flare-button-icon { background-position: -39px -331px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-linkedin .flare-button-icon { background-position: -39px -331px; }
+
+/** Buffer **/
+.flare-button.button-type-buffer .flare-button-icon { background-position: 0 -364px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-buffer .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-buffer .flare-button-icon { background-position: 0 -364px; }
+.flare-button.flare-iconstyle-round-flat.button-type-buffer .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-buffer .flare-button-icon { background-position: -41px -364px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-buffer .flare-button-icon { background-position: -41px -364px; }
+
+/** Filament **/
+.flare-button.button-type-filament .flare-button-icon { background-position: 0 -404px; }
+.flare-button.flare-iconstyle-square-flat-nostroke.button-type-filament .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke.button-type-filament .flare-button-icon { background-position: 0 -404px; }
+.flare-button.flare-iconstyle-round-flat.button-type-filament .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel.button-type-filament .flare-button-icon { background-position: -41px -404px; }
+.flare-button.flare-iconstyle-round-flat-nostroke.button-type-filament .flare-button-icon { background-position: -41px -404px; }
+
+body .flare-vertical .flare-button.last.button-type-filament { margin-bottom: 10px; }
+
+.flare-button.flare-iconstyle-square-flat,
+.flare-button.flare-iconstyle-square-flat .flare-button-wrap,
+.flare-button.flare-iconstyle-square-flat-nostroke,
+.flare-button.flare-iconstyle-square-flat-nostroke .flare-button-wrap,
+.flare-button.flare-iconstyle-square-bevel,
+.flare-button.flare-iconstyle-square-bevel .flare-button-wrap,
+.flare-button.flare-iconstyle-square-bevel .flare-button-wrap .flare-button-icon {
+    border-radius: 0;
+}
+.flare-button.flare-iconstyle-rounded-square-flat,
+.flare-button.flare-iconstyle-rounded-square-flat .flare-button-wrap,
+.flare-button.flare-iconstyle-rounded-square-flat .flare-button-wrap .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke .flare-button-wrap,
+.flare-button.flare-iconstyle-rounded-square-flat-nostroke .flare-button-wrap .flare-button-icon,
+.flare-button.flare-iconstyle-rounded-square-bevel,
+.flare-button.flare-iconstyle-rounded-square-bevel .flare-button-wrap,
+.flare-button.flare-iconstyle-rounded-square-bevel .flare-button-wrap .flare-button-icon {
+    border-radius: 5px;
+}
+.flare-button.flare-iconstyle-round-flat,
+.flare-button.flare-iconstyle-round-flat .flare-button-wrap,
+.flare-button.flare-iconstyle-round-flat .flare-button-wrap .flare-button-icon,
+.flare-button.flare-iconstyle-round-flat-nostroke,
+.flare-button.flare-iconstyle-round-flat-nostroke .flare-button-wrap,
+.flare-button.flare-iconstyle-round-flat-nostroke .flare-button-wrap .flare-button-icon,
+.flare-button.flare-iconstyle-round-bevel,
+.flare-button.flare-iconstyle-round-bevel .flare-button-wrap,
+.flare-button.flare-iconstyle-round-bevel .flare-button-wrap .flare-button-icon {
+    border-radius: 32px;
+}
+.flare-button.flare-iconstyle-square-bevel .flare-button-wrap,
+.flare-button.flare-iconstyle-rounded-square-bevel .flare-button-wrap,
+.flare-button.flare-iconstyle-round-bevel .flare-button-wrap {
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjElIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjE1Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,0) 1%, rgba(0,0,0,0.15) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(1%,rgba(255,255,255,0)), color-stop(100%,rgba(0,0,0,0.15)));
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(0,0,0,0.15) 100%);
+    background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(0,0,0,0.15) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(0,0,0,0.15) 100%);
+    background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,0) 1%,rgba(0,0,0,0.15) 100%);
+}
+.flare-horizontal .flare-button .flare-button-icon { background-image: url('../images/sprite-social-icons-horizontal-1.2.3.png'); }
+.flare-horizontal .flare-button.button-type-twitter .flare-button-icon { background-position: -3px 0; }
+.flare-horizontal .flare-button.button-type-facebook .flare-button-icon { background-position: -33px 0; }
+.flare-horizontal .flare-button.button-type-pinterest .flare-button-icon { background-position: -63px 0; }
+.flare-horizontal .flare-button.button-type-googleplus .flare-button-icon { background-position: -93px 0; }
+.flare-horizontal .flare-button.button-type-stumbleupon .flare-button-icon { background-position: -123px 0; }
+.flare-horizontal .flare-button.button-type-reddit .flare-button-icon { background-position: -153px 0; }
+.flare-horizontal .flare-button.button-type-email .flare-button-icon { background-position: -183px 0; }
+.flare-horizontal .flare-button.button-type-linkedin .flare-button-icon { background-position: -238px 0; }
+.flare-horizontal .flare-button.button-type-buffer .flare-button-icon { background-position: -263px 0; }
+.flare-horizontal .flare-button.button-type-filament .flare-button-icon { background-position: -213px 0; }
+.flare-vertical .flare-button-count {
+    position: relative;
+    display: block;
+    z-index: 100;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #555;
+    font: bold 12px/20px sans-serif;
+}
+.flare-vertical.enablehumbleflare .flare-button-count {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    
+    -ms-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -moz-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -o-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -webkit-transition: height 0.5s ease-in-out, opacity 0.5s;
+    transition: height 0.5s ease-in-out, opacity 0.5s;
+}
+.flare-vertical.enablehumbleflare.countloaded .flare-button-count {
+    height: 20px;
+    opacity: 1;
+}
+.flare-vertical.flare-backgroundcolor-dark .flare-button .flare-button-count { color: #ccc; }
+.flare-vertical.flare-backgroundcolor-none .flare-button .flare-button-count { color: #ccc; }
+.flare-horizontal .flare-button-count {
+    position: absolute;
+    bottom: 15px;
+    width: 24px;
+    left: -999em;
+    display: block;
+    text-align: center;
+    font: normal 10px/1px sans-serif;
+    color: #222;
+    text-shadow: 0 0 1px #fff;
+    
+    -ms-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.flare-horizontal.flare-position-bottom .flare-button-count,
+.flare-horizontal.flare-position-bottom-left .flare-button-count {
+    bottom: 5px;
+}
+.flare-horizontal.enablehumbleflare .flare-button-count { opacity: 0; }
+.flare-horizontal.countloaded .flare-button-count { opacity: 1; }
+
+.flare-flyout {
+    position: absolute;
+    z-index: 10;
+    margin-bottom: -72px;
+    margin-top: -15px;
+    width: 0;
+    height: 82px;
+    overflow: hidden;
+}
+.flare-flyout:before,
+.flare-flyout:after {
+    content: "";
+    display: table;
+}
+.flare-flyout:after { clear: both; }
+.flare-flyout { *zoom: 1; }
+
+.flare-flyout.hover,
+.flare-flyout:hover {
+    width: 98px;
+}
+
+.flare-horizontal .flare-flyout {
+    width: 145px;
+    height: 0;
+    min-width: 0;
+    padding: 6px 0 0 6px;
+    bottom: 30px;
+    margin-left: -6px;
+    overflow: hidden;
+}
+.flare-horizontal.enablecounters .flare-flyout {
+    bottom: 40px;
+    margin-bottom: 0;
+}
+.flare-horizontal .flare-flyout.hover,
+.flare-horizontal .flare-flyout:hover {
+    height: 57px;
+}
+.flare-left .flare-flyout {
+    padding: 10px 0 0 63px;
+    left: 0;
+}
+.flare-right .flare-flyout {
+    padding: 10px 52px 10px 10px;
+    right: 0;
+}
+.flare-flyout .flare-flyout-inner {
+    position: relative;
+    display: none;
+    padding: 10px;
+    margin: 0 0 6px;
+    line-height: 1px;
+    background: #fff;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 6px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 1px 6px 1px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 6px 1px rgba(0,0,0,0.3);
+    width: 55px;
+    height: 60px;
+}
+.flare-horizontal .flare-flyout .flare-flyout-inner {
+    width: 120px;
+    height: 15px;
+}
+.flare-flyout.hover .flare-flyout-inner,
+.flare-flyout:hover .flare-flyout-inner {
+    display: block;
+}
+.flare-flyout .flare-flyout-inner iframe {
+    display: block;
+    max-width: 1000px;
+}
+.flare-left .flare-flyout .flare-arrow,
+.flare-right .flare-flyout .flare-arrow {
+    position: absolute;
+    display: block;
+    top: 15px;
+    width: 11px;
+    height: 17px;
+}
+.flare-left .flare-flyout .flare-arrow {
+    left: -11px;
+    background: url('../images/flyout-arrow-left.png');
+}
+.flare-right .flare-flyout .flare-arrow {
+    right: -11px;
+    background: url('../images/flyout-arrow-right.png');
+}
+.flare-horizontal .flare-flyout .flare-arrow {
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 11px;
+    bottom: -11px;
+    left: 7px;
+    background: url('../images/flyout-arrow-horizontal.png') center top no-repeat;
+}
+
+.flare-flyout .flare-iframe-wrapper {
+    position: absolute;
+    top: 18px;
+    left: 70px;
+    width: 60px;
+    min-height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.flare-right .flare-flyout .flare-iframe-wrapper {
+    left: auto;
+    right: 84px;
+    top: 18px;
+}
+.flare-horizontal .flare-flyout .flare-iframe-wrapper {
+    top: 12px;
+    width: 105px;
+    bottom: 10px;
+    left: 16px;
+    text-align: left;
+    min-height: 15px;
+    line-height: 15px;
+}
+.flare-vertical .flare-flyout.flare-flyout-pinterest .flare-iframe-wrapper,
+.flare-right .flare-flyout.flare-flyout-pinterest .flare-iframe-wrapper {
+    top: 35px;
+}
+
+/* Exception for email interaction - no flyout here */
+.flare-flyout.flare-flyout-email .flare-iframe-wrapper {
+    position: absolute;
+    display: block;
+    top: 20px;
+    left: 12px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+.flare-horizontal .flare-flyout.flare-flyout-email {
+    height: 24px;
+    width: 24px;
+    bottom: 17px;
+    margin-left: 0;
+}
+.flare-horizontal .flare-flyout.flare-flyout-email .flare-iframe-wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.flare-flyout.flare-flyout-email .flare-iframe-wrapper a {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-indent: -999em;
+}
+.flare-flyout.flare-flyout-email.hover,
+.flare-flyout.flare-flyout-email:hover {
+    width: 0;
+}
+.flare-horizontal .flare-flyout.flare-flyout-email.hover,
+.flare-horizontal .flare-flyout.flare-flyout-email:hover {
+    width: 24px;
+}
+.flare-flyout.flare-flyout-email.hover .flare-flyout-inner,
+.flare-flyout.flare-flyout-email:hover .flare-flyout-inner {
+    display: none;
+}
+
+/*Filament.io special styling*/
+.flare-flyout.flare-flyout-filament .flare-flyout-inner,
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper {
+    width: 65px;
+}
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper {
+    top: 17px;
+    left: 73px;
+}
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a {
+    position: relative;
+    display: block;
+    line-height: 25px;
+    font-size: 10px;
+    text-decoration: none;
+    color: #9848b5;
+    font-family: sans-serif;
+    
+    -ms-transition: color 350ms ease-in-out;
+    -moz-transition: color 350ms ease-in-out;
+    -o-transition: color 350ms ease-in-out;
+    -webkit-transition: color 350ms ease-in-out;
+    transition: color 350ms ease-in-out;
+}
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a:hover { color: #ae53cf; }
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a:active { color: #833e9c; }
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a strong {
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+.flare-vertical .flare-flyout.flare-flyout-filament .flare-iframe-wrapper a {
+    line-height: 15px;
+}
+
+.flare-vertical .flare-flyout.flare-flyout-filament .flare-iframe-wrapper a strong {
+    font-size: 12px;
+    line-height: 12px;
+}
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a span {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 25px;
+    line-height: 23px;
+    margin-top: 4px;
+    color: #fff;
+    background-color: #9848b5;
+    border-radius: 3px;
+    
+    -ms-transition: background-color 350ms ease-in-out;
+    -moz-transition: background-color 350ms ease-in-out;
+    -o-transition: background-color 350ms ease-in-out;
+    -webkit-transition: background-color 350ms ease-in-out;
+    transition: background-color 350ms ease-in-out;
+}
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a:hover span { background-color: #ae53cf; }
+.flare-flyout.flare-flyout-filament .flare-iframe-wrapper a:active span { background-color: #833e9c; }
+/*Filament.io special Horizontal styles*/
+.flare-horizontal .flare-flyout.flare-flyout-filament .flare-flyout-inner {
+    width: 100px;
+}
+.flare-horizontal .flare-flyout.flare-flyout-filament .flare-iframe-wrapper {
+    top: 11px;
+    left: 13px;
+    width: 105px;
+}
+.flare-horizontal .flare-flyout.flare-flyout-filament .flare-iframe-wrapper a span {
+    position: absolute;
+    display: block;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    width: 9px;
+    height: 0px;
+    padding-top: 19px;
+    line-height: 0;
+    margin-top: 4px;
+    border-radius: 0;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAPCAYAAAA2yOUNAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo4QjhCOEFFMURBRDUxMUUyOEUzOUFCQjBBQjg2MDQ3RiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo4QjhCOEFFMkRBRDUxMUUyOEUzOUFCQjBBQjg2MDQ3RiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhCOEI4QURGREFENTExRTI4RTM5QUJCMEFCODYwNDdGIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjhCOEI4QUUwREFENTExRTI4RTM5QUJCMEFCODYwNDdGIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+cPB3sQAAAMZJREFUeNp00bEOAUEQxvF1OXodUYlGoVWIRCVRKNR0hKfxBEJ3lTiNEpVE4QVEq1DqVE7Cf5Ip1jiT/JLL5budvZlMFEWO6qGIGd7OVIgqYn2uY2yDAS4Y4IkRFvr+KyS1QhcPDc79oP/FHm3cbTAwdzyhhZvfOnS/dUYTWwzlJwKXXlcdSyIn/gsVsERWxpPWrowdKljLeOxJNRw1IAPuS0s/1MBB1xPrgBN/BB1tkbcBf3cb5LwWL7tg2d0EJUxtQOojwAD3wSqbXkaAEwAAAABJRU5ErkJggg==');
+
+}
+
+
+.flare-vertical .flare-button {
+    display: block;
+    clear: both;
+    float: none;
+}
+
+.flare-horizontal,
+.flare-follow {
+    position: relative;
+    width: 100%;
+    clear: both;
+    text-align: right;
+    min-height: 40px;
+}
+.flare-follow { min-height: 0; }
+.flare-horizontal.enabletotal {
+    min-height: 60px;
+}
+.flare-horizontal.flare-hidden {
+    width: 0 !important;
+    min-height: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+    visibility: hidden;
+    padding-bottom: 0 !important;
+}
+.flare-horizontal.flare-position-top-left,
+.flare-horizontal.flare-position-bottom-left { text-align: left; }
+.flare-horizontal.enablecounters { padding-bottom: 10px; }
+.flare-horizontal.enablecounters.flare-position-bottom,
+.flare-horizontal.enablecounters.flare-position-bottom-left {
+    padding-bottom: 0;
+    padding-top: 10px;
+}
+.flare-horizontal:before,
+.flare-horizontal:after,
+.flare-follow:before,
+.flare-follow:after {
+    content: "";
+    display: table;
+}
+.flare-horizontal:after,
+.flare-follow:after { clear: both; }
+.flare-horizontal,
+.flare-follow { *zoom: 1; }
+
+.flare-horizontal .flare-button {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 2px;
+}
+
+.flare-vertical {
+    position: fixed;
+    overflow: visible;
+    z-index: 100;
+    top: 40px;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    width: 40px;
+    
+    -moz-opacity: 0;
+    -webkit-opacity: 0;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -ms-filter: 'Alpha(opacity=0)';
+}
+.flare-vertical.flare-closed { display: none !important; }
+@media (max-width: 767px) {
+    .flare-vertical {
+        display: none;
+    }
+}
+.flare-vertical.flare-backgroundcolor-none {
+    background: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.flare-vertical.flare-backgroundcolor-light {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+}
+.flare-vertical.flare-backgroundcolor-dark {
+    border: 1px solid #2c2c2c;
+    background: #222;
+    -webkit-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,0.1);
+}
+.flare-vertical .flare-button { margin: 0; }
+.flare-vertical.enablecounters .flare-button { margin: 0; }
+.flare-vertical .flare-button.last,
+.flare-vertical.enablecounters .flare-button.last { margin: 0; }
+
+.flare-follow { text-align: left; }
+.flare-follow .flare-button {
+    position: relative;
+    display: block;
+    float: left;
+}
+.flare-follow .flare-button .flare-button-icon { background-image: url('../images/sprite-follow-icons.png'); }
+.flare-follow .flare-button.flare-iconsize-16 {
+    width: 16px;
+    height: 16px;
+}
+.flare-follow .flare-button.flare-iconsize-18 {
+    width: 18px;
+    height: 18px;
+}
+.flare-follow .flare-button.flare-iconsize-24 {
+    width: 24px;
+    height: 24px;
+}
+.flare-follow .flare-button.flare-iconsize-32 {
+    width: 32px;
+    height: 32px;
+}
+.flare-follow .flare-button.flare-iconsize-40 {
+    width: 40px;
+    height: 40px;
+}
+.flare-follow .flare-button.flare-iconsize-48 {
+    width: 48px;
+    height: 48px;
+}
+.flare-follow .flare-button.flare-iconsize-64 {
+    width: 64px;
+    height: 64px;
+}
+.flare-follow .flare-button.flare-iconsize-16.button-type-twitter .flare-button-icon { background-position: 16px 0; }
+.flare-follow .flare-button.flare-iconsize-16.button-type-facebook .flare-button-icon { background-position: 16px -16px; }
+.flare-follow .flare-button.flare-iconsize-16.button-type-pinterest .flare-button-icon { background-position: 16px -32px; }
+.flare-follow .flare-button.flare-iconsize-16.button-type-googleplus .flare-button-icon { background-position: 16px -48px; }
+.flare-follow .flare-button.flare-iconsize-16.button-type-rss .flare-button-icon { background-position: 16px -82px; }
+.flare-follow .flare-button.flare-iconsize-18.button-type-twitter .flare-button-icon { background-position: 34px 0; }
+.flare-follow .flare-button.flare-iconsize-18.button-type-facebook .flare-button-icon { background-position: 34px -18px; }
+.flare-follow .flare-button.flare-iconsize-18.button-type-pinterest .flare-button-icon { background-position: 34px -36px; }
+.flare-follow .flare-button.flare-iconsize-18.button-type-googleplus .flare-button-icon { background-position: 34px -54px; }
+.flare-follow .flare-button.flare-iconsize-18.button-type-rss .flare-button-icon { background-position: 34px -90px; }
+.flare-follow .flare-button.flare-iconsize-24.button-type-twitter .flare-button-icon { background-position: 58px 0; }
+.flare-follow .flare-button.flare-iconsize-24.button-type-facebook .flare-button-icon { background-position: 58px -24px; }
+.flare-follow .flare-button.flare-iconsize-24.button-type-pinterest .flare-button-icon { background-position: 58px -48px; }
+.flare-follow .flare-button.flare-iconsize-24.button-type-googleplus .flare-button-icon { background-position: 58px -72px; }
+.flare-follow .flare-button.flare-iconsize-24.button-type-rss .flare-button-icon { background-position: 58px -120px; }
+.flare-follow .flare-button.flare-iconsize-32.button-type-twitter .flare-button-icon { background-position: 90px 0; }
+.flare-follow .flare-button.flare-iconsize-32.button-type-facebook .flare-button-icon { background-position: 90px -32px; }
+.flare-follow .flare-button.flare-iconsize-32.button-type-pinterest .flare-button-icon { background-position: 90px -64px; }
+.flare-follow .flare-button.flare-iconsize-32.button-type-googleplus .flare-button-icon { background-position: 90px -96px; }
+.flare-follow .flare-button.flare-iconsize-32.button-type-rss .flare-button-icon { background-position: 90px -160px; }
+.flare-follow .flare-button.flare-iconsize-40.button-type-twitter .flare-button-icon { background-position: 130px 0; }
+.flare-follow .flare-button.flare-iconsize-40.button-type-facebook .flare-button-icon { background-position: 130px -40px; }
+.flare-follow .flare-button.flare-iconsize-40.button-type-pinterest .flare-button-icon { background-position: 130px -80px; }
+.flare-follow .flare-button.flare-iconsize-40.button-type-googleplus .flare-button-icon { background-position: 130px -120px; }
+.flare-follow .flare-button.flare-iconsize-40.button-type-rss .flare-button-icon { background-position: 130px -200px; }
+.flare-follow .flare-button.flare-iconsize-48.button-type-twitter .flare-button-icon { background-position: 178px 0; }
+.flare-follow .flare-button.flare-iconsize-48.button-type-facebook .flare-button-icon { background-position: 178px -48px; }
+.flare-follow .flare-button.flare-iconsize-48.button-type-pinterest .flare-button-icon { background-position: 178px -96px; }
+.flare-follow .flare-button.flare-iconsize-48.button-type-googleplus .flare-button-icon { background-position: 178px -144px; }
+.flare-follow .flare-button.flare-iconsize-48.button-type-rss .flare-button-icon { background-position: 178px -240px; }
+.flare-follow .flare-button.flare-iconsize-64.button-type-twitter .flare-button-icon { background-position: 242px 0; }
+.flare-follow .flare-button.flare-iconsize-64.button-type-facebook .flare-button-icon { background-position: 242px -64px; }
+.flare-follow .flare-button.flare-iconsize-64.button-type-pinterest .flare-button-icon { background-position: 242px -128px; }
+.flare-follow .flare-button.flare-iconsize-64.button-type-googleplus .flare-button-icon { background-position: 242px -192px; }
+.flare-follow .flare-button.flare-iconsize-64.button-type-rss .flare-button-icon { background-position: 242px -324px; }
+
+.flare-vertical .flare-total,
+.flare-horizontal .flare-total {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 55px;
+    
+    color: #505050;
+    font: normal 11px/1em sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 1;
+    
+    -ms-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -moz-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -o-transition: height 0.5s ease-in-out, opacity 0.5s;
+    -webkit-transition: height 0.5s ease-in-out, opacity 0.5s;
+    transition: height 0.5s ease-in-out, opacity 0.5s;
+}
+.flare-vertical .flare-total {
+    width: 80px;
+    margin-left: -20px;
+}
+.flare-vertical.enabletotal .flare-total { display: block; }
+.flare-horizontal.enabletotal .flare-total { display: inline-block; }
+.flare-vertical .flare-total.last,
+.flare-horizontal .flare-total.last,
+.flare-position-bottom-left .flare-total.first,
+.flare-position-top-left .flare-total.first {
+    display: none;
+}
+.flare-vertical.enablehumbleflare .flare-total {
+    height: 0;
+    opacity: 0;
+}
+.flare-vertical.enablehumbleflare.countloaded .flare-total {
+    height: 55px;
+    opacity: 1;
+}
+.flare-vertical.flare-backgroundcolor-dark .flare-total { color: #fff; }
+.flare-horizontal.enabletotal .flare-total {
+    min-width: 55px;
+    width: auto;
+    height: 45px;
+    padding-right: 7px;
+    margin-right: 7px;
+    top: 12px;
+    
+    border-right: 1px solid #505050;
+    
+    -ms-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.flare-horizontal.enablehumbleflare .flare-total { opacity: 0; }
+.flare-horizontal.countloaded .flare-total { opacity: 1; }
+.flare-position-bottom-left.enabletotal .flare-total.last,
+.flare-position-top-left.enabletotal .flare-total.last {
+    display: inline-block;
+    margin-left: 7px;
+    padding-left: 7px;
+    margin-right: 0;
+    padding-right: 0;
+    
+    border-left: 1px solid #505050;
+    border-right: none;
+}
+.flare-vertical .flare-total strong,
+.flare-horizontal .flare-total strong {
+    display: block;
+    font: 700 28px/1.2em 'Oswald', sans-serif;
+}
+
+
+.flare-vertical .loading {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    height: 24px;
+    
+    background: url('../images/loading-background.png');
+    opacity: 1;
+    
+    -ms-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+.flare-vertical.countloadfinished .loading { opacity: 0; }
+.flare-vertical .loading span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: url('../images/loading.gif') 1px 1px no-repeat;
+}
+
+
+.flare-horizontal .close { display: none; }
+.flare-vertical .close {
+    position: relative;
+    z-index: 1337;
+    display: none;
+    padding-top: 5px;
+    
+    border-top: 1px solid #757575;
+    color: #616161;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+}
+.flare-vertical.closablevertical .close { display: block; }
+.flare-vertical .close a {
+    color: #616161;
+    text-decoration: none;
+    
+    -ms-transition: color 0.35s;
+    -moz-transition: color 0.35s;
+    -o-transition: color 0.35s;
+    -webkit-transition: color 0.35s;
+    transition: color 0.35s;
+}
+.flare-vertical .close a:hover { color: #333; }
+
+/*Pinterest Iframe CSS fix*/
+iframe[class*='PIN_'], iframe[class^='PIN_'] { display: none !important; }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/data science retreat.iml" filepath="$PROJECT_DIR$/.idea/data science retreat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hacker retreat berlin/.idea/hacker retreat berlin.iml" filepath="$PROJECT_DIR$/../hacker retreat berlin/.idea/hacker retreat berlin.iml" />
+    </modules>
+  </component>
+</project>
+
