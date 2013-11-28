@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync --stats --compress --exclude=.git --exclude=.idea --exclude=.dropbox --recursive  --exclude=sync.sh /drives/c/Users/quesada/coding/datascienceretreat quesada@memoryous.com:/home/quesada
