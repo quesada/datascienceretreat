@@ -106,11 +106,28 @@
 				    </div>
 
 				    <div class="six columns">
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+					    <ul>
+						    <li>Finding the question</li>
 
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+						    <li>Translating something vague into a dependent measure and an actual set of predictors</li>
+					    </ul>
+
+					    <h2>What generates business value?</h2>
+
+                  <ul>
+                    <li>The Business Model Canvas to design a data product</li>
+
+                    <li>Key performance indicators; examples, measurement, improvement</li>
+
+                    <li>Most business problems are not very well defined. How do we make them actionable?</li>
+
+                    <li>Analyzing big success stories in data science</li>
+
+	                  <li>Getting Buy-in</li>
+
+                  </ul>
+
+
 				    </div>
 			    </div>
 
@@ -122,11 +139,38 @@
 
 			    <div class="row">
 				    <div class="six columns">
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+					    <ul>
+						    <li>
+							    <h2>Using APIs</h2>
 
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+							    <ul>
+								    <li>Using databases</li>
+
+								    <li>Parsing html; web scrapping</li>
+
+								    <li>Transforming data (reshape)</li>
+
+								    <li>Finding APIs</li>
+							    </ul>
+						    </li>
+
+						    <li>
+							    <h2>Feature engineering</h2>
+
+							    <ul>
+								    <li>Avoiding autocorrelation</li>
+
+								    <li>Removing features with low variance</li>
+
+								    <li>Detecting outliers</li>
+
+								    <li>Exploratory analyses</li>
+
+								    <li>Measuring predictor importance</li>
+							    </ul>
+						    </li>
+					    </ul>
+
 				    </div>
 
 				    <div class="six columns">
@@ -285,11 +329,91 @@
 			    </div>
 
 				    <div class="six columns">
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+					    <ul>
+						    <li>
+							    <h2>Big data overview</h2>
 
-					    <p>foo arstoirnta oartna rtornst
-						    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+							    <ul>
+								    <li>Hadoop / ecosystem, SQL-on-Hadoop</li>
+
+								    <li>What MapReduce can't do</li>
+
+								    <li>Other technologies: BSP, Stratosphere, Spark, Real-time</li>
+
+								    <li>Big Data BI / visualization, ODBC connectors: QlikView integration, R integration</li>
+							    </ul>
+						    </li>
+
+						    <li>Distributed machine learning</li>
+
+						    <li>Machine learning on streams</li>
+
+						    <li>
+							    <h2>mapReduce</h2>
+
+							    <ul>
+								    <li>MapReduce, google 2004</li>
+
+								    <li>Main idea, applications, extensions</li>
+
+								    <li>Practice: Python’s MRJob
+
+									    <ul>
+										    <li>Basic counting: Text statistics, PI MonteCarlo, calculating histograms</li>
+
+										    <li>Multi-step: Co-ocurrences (Gowalla checkins)</li>
+
+										    <li>Join / Multi-step: Friend recommender (Anonymized Facebook data)</li>
+									    </ul>
+								    </li>
+							    </ul>
+						    </li>
+
+						    <li>
+							    <h2>Big Data analysis</h2>
+
+							    <ul>
+								    <li>Preparation and configuraton
+
+									    <ul>
+										    <li>Hadoop cluster: HDFS, Namenode, Jobtracker, Scheduler,</li>
+
+										    <li>Practice: Uploading / downloading / moving files around, executing MRJob scripts, checking for completion / failure in Jobtracker, etc.</li>
+									    </ul>
+								    </li>
+
+								    <li>Hive
+
+									    <ul>
+										    <li>Practice: Defining a Hive table over a Text / JSON file. Querying a Hive table</li>
+
+										    <li>Integrating R with Hive. (using RHive)</li>
+									    </ul>
+								    </li>
+
+								    <li>Mahout
+
+									    <ul>
+										    <li>Executing clustering tasks. Visualizing the result with R</li>
+
+										    <li>Executing item-to-item recommender</li>
+									    </ul>
+								    </li>
+
+								    <li>Cascading/pattern
+
+									    <ul>
+										    <li>Data flow modeling using PyCascading</li>
+
+										    <li>Data querying using LINGUAL SQL</li>
+
+										    <li>Executing Machine Learning "Pattern" algorithms</li>
+									    </ul>
+								    </li>
+							    </ul>
+						    </li>
+					    </ul>
+
 				    </div>
 
 				    <div class="row">
@@ -307,15 +431,49 @@
 
 		    <div class="row">
 			    <div class="six columns">
-				    <img src="./resources/images/uniq.jpg">
+				    <img src="./resources/images/pair-gargoyle.jpg">
 			    </div>
 
 			    <div class="six columns">
-				    <p>foo arstoirnta oartna rtornst
-					    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+				    <ul>
+					    <li>Algorithms and data structures: classifying problems, big-O, where to go for more info</li>
 
-				    <p>foo arstoirnta oartna rtornst
-					    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+					    <li>Languages: trade-offs in Python, R, Java, Clojure</li>
+
+					    <li>Overview of devops, clusters, etc.</li>
+
+					    <li>Toolchain, OS/shells, version control
+
+						    <ul>
+							    <li>
+								    <h2>Command line</h2>
+
+								    <ul>
+									    <li>regular expressions</li>
+
+									    <li>pipes</li>
+
+									    <li>unix toolset (sort, uniq, awk). Parallelization 'on the cheap'</li>
+								    </ul>
+							    </li>
+
+							    <li>git</li>
+						    </ul>
+					    </li>
+
+					    <li>Software process: managing complexity, fighting entropy
+
+						    <ul>
+							    <li>Software project management: from waterfall to agile</li>
+
+							    <li>Less code, more capability: architecture and design for DRY, orthogonality, and expressiveness</li>
+
+							    <li>Testing, continuous integration</li>
+
+							    <li>Code reviews</li>
+						    </ul>
+					    </li>
+				    </ul>
 			    </div>
 
 
@@ -329,15 +487,34 @@
 
 		    <div class="row">
 			    <div class="six columns">
-				    <p>foo arstoirnta oartna rtornst
-					    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+				    <ul>
+					    <li>
+						    <h2>Visualization</h2>
 
-				    <p>foo arstoirnta oartna rtornst
-					    Kai is a twice born-again coder (Python, then Lisp/Clojure), known to sing praises to Emacs, Org mode, and SICP. When not working on a clean energy startup, he’s reading philosophy, history, or hunting anomalies, looking for hints of the future – though heeding the caveat of a certain baseball player: “Predictions are hard; especially about the future.” He’s Eastern by birth, Western by schooling, global by outlook, and European by choice, calling the urban utopia of Berlin home.</p>
+						    <ul>
+							    <li>Study Tufte's VDQI book</li>
+
+							    <li>D3.js </li>
+							    <li>R shiny</li>
+						    </ul>
+					    </li>
+
+					    <li>
+						    <h2>Communication</h2>
+
+						    <ul>
+							    <li>Communicate basic quantitative concepts clearly and concisely</li>
+
+							    <li>Documentation: writing and reviewing 1-page executive summaries</li>
+
+							    <li>Presentation skills (practice: at least 1 presentation per week)</li>
+						    </ul>
+					    </li>
+				    </ul>
 			    </div>
 
 					<div class="six columns">
-				    <img src="./resources/images/uniq.jpg">
+				    <img src="./resources/images/napolean2.gif">
 			    </div>
 		    </div>
       </div> <!-- /#content -->
