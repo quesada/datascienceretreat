@@ -50,6 +50,8 @@ img, a img {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
+    text-align: center;
+    margin: 0 auto;
 }
 
 img #bottom-logo {
@@ -106,15 +108,15 @@ body{
 #access {
 	float: right;
 }
-	.nav-bar > li > a{
-		text-transform: lowercase;
-		text-decoration: none;
-		font-family: 'Rokkitt', serif;
-		font-size: 19px;
-		font-weight: 600;
-		color: white;
-		text-shadow: 0 1px 0 #090d0f;
-	}
+.nav-bar > li > a{
+    text-transform: lowercase;
+    text-decoration: none;
+    font-family: 'Rokkitt', serif;
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0 1px 0 #090d0f;
+}
 
 /* -------------------------------------- Sidebar / Widgets */
 #sidebar { 

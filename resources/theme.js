@@ -20,15 +20,10 @@
      */
     $('iframe[src*="vimeo.com"]').wrap('<div class="flex-video vimeo widescreen" />');
     $('iframe[src*="youtube.com"]').wrap('<div class="flex-video widescreen" />');
+    
     /**
      * Masonry
      */
-    $('.masonry').masonry({
-        // options
-        itemSelector : 'li',
-        gutterWidth : 30
-    });
-
     $.expr[':'].external = function(obj){
         return !obj.href.match(/^mailto\:/)
            && (obj.hostname != location.hostname)
